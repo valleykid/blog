@@ -782,7 +782,7 @@ class Widget_Abstract_Contents extends Widget_Abstract
     public function content($more = false)
     {
         echo false !== $more && false !== strpos($this->text, '<!--more-->') ?
-	// $this->excerpt . "<p class=\"more\"><a href=\"{$this->permalink}\" title=\"{$this->title}\">{$more}</a></p>" : $this->content;
+        // $this->excerpt . "<p class=\"more\"><a href=\"{$this->permalink}\" title=\"{$this->title}\">{$more}</a></p>" : $this->content;
         strip_tags($this->excerpt) . "<a class=\"more\" href=\"{$this->permalink}\" title=\"{$this->title}\">{$more}</a>" : $this->content;
     }
 
