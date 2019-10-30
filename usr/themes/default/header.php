@@ -18,9 +18,14 @@
     <link rel="stylesheet" href="<?php $this->options->themeUrl('grid.css'); ?>">
     <link rel="stylesheet" href="<?php $this->options->themeUrl('style.css'); ?>">
 
+    <!-- highlight -->
+    <link rel="stylesheet" href="<?php $this->options->themeUrl('styles/default.css'); ?>" />
+    <script src="<?php $this->options->themeUrl('highlight.min.js'); ?>"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+
     <!--[if lt IE 9]>
-    <script src="//cdnjscn.b0.upaiyun.com/libs/html5shiv/r29/html5.min.js"></script>
-    <script src="//cdnjscn.b0.upaiyun.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <script src="//cdn.bootcss.com/html5shiv/r29/html5.min.js"></script>
+    <script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 
     <!-- 通过自有函数输出HTML头部信息 -->
