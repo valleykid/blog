@@ -19,7 +19,7 @@
     <link rel="stylesheet" href="<?php $this->options->themeUrl('style.css'); ?>">
 
     <!-- highlight -->
-    <link rel="stylesheet" href="<?php $this->options->themeUrl('styles/default.css'); ?>" />
+    <link rel="stylesheet" href="<?php $this->options->themeUrl('styles/atom-one-dark.css'); ?>" />
     <script src="<?php $this->options->themeUrl('highlight.min.js'); ?>"></script>
     <script>hljs.initHighlightingOnLoad();</script>
 
