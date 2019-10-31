@@ -8,11 +8,12 @@
             <li itemprop="author" itemscope itemtype="http://schema.org/Person"><?php _e('作者: '); ?><a itemprop="name" href="<?php $this->author->permalink(); ?>" rel="author"><?php $this->author(); ?></a></li>
             <li><?php _e('时间: '); ?><time datetime="<?php $this->date('c'); ?>" itemprop="datePublished"><?php $this->date(); ?></time></li>
             <li><?php _e('分类: '); ?><?php $this->category(','); ?></li>
+            <li><?php _e('标签: '); ?><?php $this->tags(', ', true, 'none'); ?></li>
         </ul>
         <div class="post-content" itemprop="articleBody">
             <?php $this->content(); ?>
         </div>
-        <p itemprop="keywords" class="tags"><?php _e('标签: '); ?><?php $this->tags(', ', true, 'none'); ?></p>
+        <!--<p itemprop="keywords" class="tags">标签占位</p>-->
         <!--<a href="http://creativecommons.org/licenses/by-nc-sa/3.0/cn/" rel="external nofollow" target="_blank">CC BY-NC-SA 3.0 CN</a> 许可协议-->
         <div>
             <ul class="post-copyright">
